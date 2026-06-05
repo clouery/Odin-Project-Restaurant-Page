@@ -5,12 +5,19 @@ body {
     padding: auto;
 }
 
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 header {
     display: flex;
-    background-color: rgb(0, 0, 0,0.8);
+    background-color: rgb(0, 0, 0);
     margin-top: 0;
     flex-direction: column;
+    background-image: url(img/layer2.png);
+    background-size: cover;
 }
 
 header .title {
@@ -19,9 +26,17 @@ header .title {
     align-items: center;
 }
 
-header p {
-    color: white;
-    font-size: 20px;
+
+header button {
+    color: aliceblue;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s;
+}
+
+header button:hover {
+    transform: translateY(-4px);
 }
 
 
@@ -31,9 +46,50 @@ header p {
 }
 
 
+/* Buttons */
+button {
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: 0.6;
+    padding: 5px;
+}
+.home-btn {
+    position: fixed;
+    left: 48%;
+    top: 45%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.menu-btn {
+    position: fixed;
+    left: 18%;
+    top: 31%;
+    /* transform: translateY(-50%); */
+}
+
+
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0, 0, 0,0.8);
+    background-image: url(img/layer2.png);
+    background-size: auto;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 24px;
+    color: aliceblue;
+    height: 40px;
+    transition: .2s;
+    padding-top: 4px;
+}
+
+footer a:hover {
+    /* font-size: 28px; */
+    transform: translateY(-4px);
+    /* transform: translateY(5px); */
+
 }
