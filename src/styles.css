@@ -67,7 +67,27 @@ button {
     /* transform: translateY(-50%); */
 }
 
+.nextItemBtn {
+    position: fixed;
+    top: 76%;
+    right: 48%;
+    height: 100px;
+    border-radius: 100%;
+    opacity: 0;
+    transform: scale(0.55);
+    background: radial-gradient(circle at center, #ffffff 0 18%, rgba(0, 0, 0, 0.8) 19% 100%);
+    cursor: pointer;
 
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.nextItemBtn:hover {
+    transform: scale(1.50);
+    opacity: 1;
+        background: radial-gradient(circle at center, hsl(35, 88%, 81%) 0 100%, rgba(0, 0, 0, 0.8) 19% 100%); 
+}
 
 footer {
     display: flex;
