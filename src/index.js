@@ -1,9 +1,9 @@
 // This is the default page (home page) to be generated
 import "./styles.css";
 
+// TODO: Change to a different Bg img
 import homeBg from "./img/homebg.jpg";
 
-// 
 const headerHomeBtn = document.querySelector(".toHome");
 headerHomeBtn.addEventListener('click', (event) => {
     window.location.reload();
