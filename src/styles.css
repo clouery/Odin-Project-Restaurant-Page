@@ -1,0 +1,39 @@
+body {
+    background-image: url(img/backgroundimg.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: auto;
+}
+
+
+header {
+    display: flex;
+    background-color: rgb(0, 0, 0,0.8);
+    margin-top: 0;
+    flex-direction: column;
+}
+
+header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+}
+
+
+#contents {
+    display: flex;
+    flex: 1;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
